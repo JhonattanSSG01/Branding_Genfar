@@ -1,0 +1,9 @@
+:root{
+  --colorWhite: #dadada;
+  --colorBlack: #090909;
+  --colorVinotinto: #7F0000;
+  --colorRed: #E2211C;
+  --colorButton: #1E951E;
+  --colorWhite: #dadada;
+  --bgColor: linear-gradient(90deg, #ffffff 20%, transparent 80%);
+}

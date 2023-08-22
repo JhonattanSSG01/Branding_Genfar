@@ -9,7 +9,7 @@
 .container::before{
   content: "";
   width: 100%;
-  background-image: linear-gradient(90deg, #ffffff 20%, transparent 80%);
+  background-image: var(--bgColor);
   filter: blur(50px);
   position: absolute;
   top: 0;
