@@ -75,7 +75,7 @@ main {
   content: "";
   width: 100%;
   background-image: var(--bgRadial);
-  filter: opacity(0.6) drop-shadow(4px 6px 8px black);
+  filter: opacity(0.85);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -115,7 +115,7 @@ main {
 
 .products article {
   width: 6rem;
-  height: 6rem;
+  height: 6.5rem;
   clip-path: polygon(
     50% 0,
     100% 10%,
@@ -128,6 +128,8 @@ main {
   );
   background-color: var(--colorWhite);
   filter: grayscale(1);
+  display: grid;
+  place-items: center;
 }
 
 .products article:hover,
@@ -150,6 +152,7 @@ main {
 
 .products article img {
   width: 100%;
+  padding: .5rem;
 }
 
 .containerInfo {
@@ -162,7 +165,7 @@ main {
 }
 
 .detail h2 {
-  margin: 0 2rem;
+  margin: 0 1rem;
   font-size: 7rem;
   text-transform: uppercase;
   color: transparent;
@@ -222,6 +225,7 @@ main {
   width: 3.5rem;
   margin-top: 1rem;
   margin-left: -1rem;
+  cursor: pointer;
 }
 
 .imgBig{
@@ -241,4 +245,71 @@ footer .logOtc{
   position: absolute;
   bottom: .5rem;
   right: 2rem;
+}
+
+/* MODAL */
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,0,0, .8);
+  z-index: 1;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+
+}
+
+.showModal{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+}
+
+.modal .containerModal{
+  width: 50%;
+  max-width: 400px;
+  max-height: 90%;
+  margin: auto;
+  padding: 2rem 3rem;
+  background-color: var(--colorWhite);
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.containerModal .titleModal{
+  font-size: 2rem;
+  font-family: 'Gotham-light';
+}
+
+.containerModal .titleModal > span{
+  color: var(--colorRed);
+  text-transform: uppercase;
+  font-family: 'Gotham-bold';
+}
+
+.containerModal img{
+  width: 90%;
+}
+
+.containerModal .closeModal{
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  background-color: var(--colorRed);
+  border-radius: 50%;
+}
+
+.containerModal .closeModal > i{
+  color: var(--colorWhite);
+  font-size: 3rem;
+  border: 3px solid var(--colorBlack);
+  border-radius: 50%;
+  cursor: pointer;
 }

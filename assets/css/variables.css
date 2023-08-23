@@ -13,5 +13,5 @@
   --colorInput: #D4D4D4;
   --bgColor: linear-gradient(90deg, #fff 30%, transparent 60%);
   --bgNav: linear-gradient(180deg, #7b7b7b, #fff 50%, #7b7b7b);
-  --bgRadial: radial-gradient(closest-side, transparent, #3E0101 60%);
+  --bgRadial: radial-gradient(closest-side at 45% 55%, #3e01017b, #3E0101 60%);
 }
