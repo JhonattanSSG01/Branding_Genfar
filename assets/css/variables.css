@@ -1,9 +1,13 @@
 :root{
-  --colorWhite: #dadada;
+  --colorWhite: #FEFEFE;
   --colorBlack: #090909;
-  --colorVinotinto: #7F0000;
+  --colorRedWineNav: #520101;
+  --colorRedWine: #7F0000;
+  --colorBorder: #A10000;
   --colorRed: #E2211C;
+  --colorRedCheck: #FF8683;
   --colorButton: #1E951E;
-  --colorWhite: #dadada;
-  --bgColor: linear-gradient(90deg, #ffffff 20%, transparent 80%);
+  --colorInput: #D4D4D4;
+  --bgColor: linear-gradient(90deg, #fff 30%, transparent 60%);
+  --bgNav: linear-gradient(180deg, #7b7b7b, #fff 50%, #7b7b7b);
 }
