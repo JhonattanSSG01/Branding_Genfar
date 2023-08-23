@@ -19,6 +19,7 @@
   width: 1024px;
   height: 768px;
   font-family: "Gotham-book";
+  overflow: hidden;
 }
 
 .home {
@@ -163,7 +164,7 @@ form .btn {
   font-size: 0.7rem;
 }
 
-footer {
+.mainFooter {
   height: 7.3rem;
   padding: 0 1.5rem;
   text-align: justify;
@@ -177,7 +178,7 @@ footer {
   );
 }
 
-footer .copy {
+.mainFooter .copy {
   width: 85%;
   padding: 1.3rem;
 }
@@ -193,7 +194,7 @@ footer .copy {
   font-size: 0.55rem;
 }
 
-footer .logo {
+.logo {
   width: 15%;
 }
 

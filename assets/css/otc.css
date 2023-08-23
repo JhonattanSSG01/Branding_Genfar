@@ -1,5 +1,5 @@
-img {
-  width: 100%;
+main {
+  position: relative;
 }
 
 .otc {
@@ -9,13 +9,17 @@ img {
 .title {
   width: 30%;
   height: 2.5rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   background-color: var(--colorWhite);
   clip-path: polygon(100% 0, 94% 82%, 50% 100%, 8% 82%, 0 0);
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
+
 .title > h2 {
   padding-top: 0.2rem;
   color: var(--colorRed);
@@ -24,26 +28,217 @@ img {
   font-size: 1.8rem;
 }
 
+.borderTitle {
+  width: 90%;
+  height: 1.8rem;
+  margin: 0 auto;
+  background-image: linear-gradient(var(--colorRed) 50%, transparent 50%);
+  clip-path: polygon(47% 100%, 0 0, 100% 0);
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  margin-top: -1rem;
+}
+
 .img {
-  width: 50vw;
-  height: 80vh;
-  clip-path: polygon(100% 0, 100% 91%, 45% 95%, 0 86%, 5% 7%);
+  width: 52vw;
+  height: 90vh;
+  clip-path: polygon(100% 0, 100% 91%, 45% 95%, 0 90%, 4% 6%);
   transform: scaleX(-1);
   background-image: url(../images/nino-con-dolor-cabeza.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.borderImage {
+  width: 53vw;
+  height: 92vh;
+  clip-path: polygon(100% 0, 100% 90%, 47% 95%, 0% 89%, 5% 6%);
+  transform: scaleX(-1);
+  background-color: var(--colorBorderImage);
+  position: absolute;
   margin-top: -120px;
+  top: 7.3rem;
+  z-index: -2;
 }
 
 .img::before {
   content: "";
   width: 100%;
   background-image: var(--bgRadial);
-  filter: opacity(.9);
+  filter: opacity(0.6) drop-shadow(4px 6px 8px black);
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 0;
 }
 
+.productsContainer {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  width: 55vw;
+}
+
+.productsContainer h2 {
+  width: 25rem;
+  padding: 0 2rem;
+  font-family: "Gotham-light";
+  font-weight: 200;
+  font-size: 3rem;
+  color: var(--colorWhite);
+  text-align: right;
+  margin: auto;
+}
+
+.productsContainer h2 span {
+  font-family: "Gotham-bold";
+}
+
+.products {
+  width: 60%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 1rem 2rem;
+}
+
+.products article {
+  width: 6rem;
+  height: 6rem;
+  clip-path: polygon(
+    50% 0,
+    100% 10%,
+    100% 90%,
+    75% 100%,
+    50% 90%,
+    25% 100%,
+    0 90%,
+    0 10%
+  );
+  background-color: var(--colorWhite);
+  filter: grayscale(1);
+}
+
+.products article:hover,
+.products article:active {
+  filter: grayscale(0);
+}
+
+.products article:nth-child(1){
+  align-self: flex-start;
+  filter: grayscale(0);
+}
+
+.products article:nth-child(2) {
+  align-self: center;
+}
+
+.products article:nth-child(3) {
+  align-self: flex-end;
+}
+
+.products article img {
+  width: 100%;
+}
+
+.containerInfo {
+  display: flex;
+}
+
+.detail{
+  padding-top: 2rem;
+  position: relative;
+}
+
+.detail h2 {
+  margin: 0 2rem;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--colorRed);
+  text-align: right;
+  font-family: 'Gotham-bold';
+}
+
+.video{
+  width: 52%;
+  margin: 0 1rem 0 auto;
+}
+
+.video > .trailer{
+  width: 9rem;
+  height: 6.8rem;
+  padding: .8rem 1.5rem 0;
+  margin: 0 auto;
+  background-color: var(--colorPlay);
+  clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+}
+.video > .trailer > i{
+  font-size: 4rem;
+  margin: 0 2rem;
+  color: var(--colorWhite);
+}
+
+.video > .trailer > span{
+  color: var(--colorWhite);
+  vertical-align: sub;
+}
+
+.video p {
+  font-size: 1.9rem;
+  margin: 1.5rem 0;
+  font-family: 'Gotham-light';
+}
+
+.video .data > span{
+  color: var(--colorRed);
+  font-family: 'Gotham-bold';
+}
+
+.video .data > .number{
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.video .recomendation{
+  font-size: .8rem;
+  line-height: 2px;
+  font-family: 'Gotham-light';
+  color: var(--colorGray);
+}
+
+.video .icon img{
+  width: 3.5rem;
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+
+.imgBig{
+  width: 55%;
+  height: 85%;
+  position: absolute;
+  left: -3.5rem;
+  bottom: -2rem;
+}
+
+.imgBig img{
+  width: 95%;
+  height: 90%;
+}
+
+footer .logOtc{
+  position: absolute;
+  bottom: .5rem;
+  right: 2rem;
+}

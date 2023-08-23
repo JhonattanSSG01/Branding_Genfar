@@ -4,11 +4,14 @@
   --colorRedWineNav: #520101;
   --colorRedWine: #7F0000;
   --colorBorder: #A10000;
+  --colorBorderImage: #A3272D;
   --colorRed: #E2211C;
+  --colorPlay: #FF342C;
+  --colorGray: #676767;
   --colorRedCheck: #FF8683;
   --colorButton: #1E951E;
   --colorInput: #D4D4D4;
   --bgColor: linear-gradient(90deg, #fff 30%, transparent 60%);
   --bgNav: linear-gradient(180deg, #7b7b7b, #fff 50%, #7b7b7b);
-  --bgRadial: radial-gradient(closest-side, transparent, #420202 80%);
+  --bgRadial: radial-gradient(closest-side, transparent, #3E0101 60%);
 }
