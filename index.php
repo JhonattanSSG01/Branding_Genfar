@@ -50,11 +50,11 @@
               <span>Desea recibir información</span>
               <label for="si">
                 Si
-                <input type="radio" id="si" required name="select" />
+                <input type="radio" id="si" value="si" required name="select" />
               </label>
               <label for="no">
                 No
-                <input type="radio" id="no" required name="select" />
+                <input type="radio" id="no" value="no" required name="select" />
               </label>
             </fieldset>
             <button class="btn" type="submit" name="enviar">Enviar</button>
@@ -83,7 +83,6 @@
   </div>
   <?php
     include("enviar.php");
-    include("correo.php");
   ?>
 </body>
 
