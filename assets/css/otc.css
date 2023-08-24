@@ -284,7 +284,7 @@ footer .logOtc{
 
 .modal .containerModalVideo{
   width: 90%;
-  height: 65%;
+  height: auto;
   max-width: 1000px;
   max-height: 90%;
   margin: auto;
@@ -294,23 +294,26 @@ footer .logOtc{
 
 .containerModalVideo .video{
   width: 100%;
-  height: 25rem;
-  background-color: var(--colorGrayVideo);
+  height: auto;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
-.containerModalVideo .video > .circlePlay{
-  width: 7rem;
-  height: 7rem;
-  padding: 1.5rem 2rem;
+.containerModalVideo .play{
+  outline: none;
+  border: none;
+  width: 10%;
+  padding: 1rem 1.5rem;
   background-color: var(--colorVideoPlay);
   border-radius: 50%;
-}
-
-.containerModalVideo .video > .circlePlay > .play{
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--colorWhite);
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  margin: auto;
+  cursor: pointer;
 }
 
 .containerModalVideo .titleModal{

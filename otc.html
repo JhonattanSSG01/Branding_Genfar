@@ -58,7 +58,7 @@
         <h2>otc</h2>
         <div class="contain">
           <section class="video">
-            <div class="trailer">
+            <div class="trailer" id="iconVideo">
               <i class="fa-solid fa-play"></i>
               <span>Ver Video</span>
             </div>
@@ -75,7 +75,7 @@
               Genfar 2022, evaluados según <br />
               las dosis recomendada del producto.
             </span>
-            <div class="icon" id="icon">
+            <div class="icon" id="iconProduct">
               <img src="./assets/images/lupa.png" alt="lupa de maximo">
             </div>
           </section>
@@ -98,7 +98,7 @@
         <i class="fa-solid fa-circle-xmark"></i>
       </div>
       <h2 class="titleModal">Producto <span>otc</span></h2>
-      <img src="../assets/images/acetaminofen-160mg.png" alt="Acetaminofen modal">
+      <img src="./assets/images/acetaminofen-160mg.png" alt="Acetaminofen modal">
     </section>
   </div>
   
@@ -108,22 +108,14 @@
         <i class="fa-solid fa-circle-xmark"></i>
       </div>
       <h2 class="titleModal">Video <span>Promocional</span></h2>
-      <div class="video">
-        <div class="circlePlay">
-          <i class="fa-solid fa-play play"></i>
-        </div>
-      </div>
-      <div class="controls">
-        <i class="fa-solid fa-play"></i>
-        <i class="fa-solid fa-backward-step"></i>
-        <i class="fa-solid fa-forward-step"></i>
-        <div class="line"></div>
-        <i class="fa-solid fa-volume-high"></i>
-        <i class="fa-solid fa-gear"></i>
-      </div>
+      <video class="video" id="video" controls>
+        <source src="../assets/video/Genfar, 56 años comprometidos con el cuidado de todos.mp4" type="video/mp4" />
+      </video>
+      <button class="play" id="button">&#9658</button>
     </section>
   </div>
   <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/controls.js"></script>
 </body>
 
 </html>
