@@ -21,7 +21,7 @@
   <header class="figure">
     <nav>
       <ul>
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.php">Home</a></li>
         <li><a href="#">Estrellas</a></li>
         <li><a href="#">Lanzamientos</a></li>
         <li><a class="active" href="#">OTC</a></li>
@@ -43,13 +43,13 @@
           <h2>Alivia <span>el dolor y la fiebre</span></h2>
           <section class="products">
             <article>
-              <img src="../assets/images/acetaminofen-160mg-sm.png" alt="Acetaminofen 160mg" />
+              <img src="./assets/images/acetaminofen-160mg-sm.png" alt="Acetaminofen 160mg" />
             </article>
             <article>
-              <img src="../assets/images/acetaminofen-500mg.png" alt="Acetaminofen 500mg" />
+              <img src="./assets/images/acetaminofen-500mg.png" alt="Acetaminofen 500mg" />
             </article>
             <article>
-              <img src="../assets/images/genfardol-ultra-forte-caja-con-10-tabletas.png" alt="ultra-forte" />
+              <img src="./assets/images/genfardol-ultra-forte-caja-con-10-tabletas.png" alt="ultra-forte" />
             </article>
           </section>
         </div>
@@ -76,11 +76,11 @@
               las dosis recomendada del producto.
             </span>
             <div class="icon" id="icon">
-              <img src="../assets/images/lupa.png" alt="lupa de maximo">
+              <img src="./assets/images/lupa.png" alt="lupa de maximo">
             </div>
           </section>
           <section class="imgBig">
-            <img src="../assets/images/acetaminofen-160mg.png" alt="Acetaminofen 160mg Grande">
+            <img src="./assets/images/acetaminofen-160mg.png" alt="Acetaminofen 160mg Grande">
           </section>
         </div>
       </div>
@@ -88,20 +88,42 @@
   </main>
   <footer>
     <div class="logo logOtc">
-      <img src="../assets/images/logo.png" alt="Logo Genfar">
+      <img src="./assets/images/logo.png" alt="Logo Genfar">
     </div>
   </footer>
 
-  <div class="modal" id="modal">
-    <section class="containerModal">
-      <div class="closeModal" id="closeModal">
+  <div class="modal" id="modalProduct">
+    <section class="containerModalProduct">
+      <div class="closeModal" id="closeModalProduct">
         <i class="fa-solid fa-circle-xmark"></i>
       </div>
       <h2 class="titleModal">Producto <span>otc</span></h2>
       <img src="../assets/images/acetaminofen-160mg.png" alt="Acetaminofen modal">
     </section>
   </div>
-  <script src="../assets/js/modal.js"></script>
+  
+  <div class="modal" id="modalVideo">
+    <section class="containerModalVideo">
+      <div class="closeModal" id="closeModalVideo">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <h2 class="titleModal">Video <span>Promocional</span></h2>
+      <div class="video">
+        <div class="circlePlay">
+          <i class="fa-solid fa-play play"></i>
+        </div>
+      </div>
+      <div class="controls">
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <div class="line"></div>
+        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </section>
+  </div>
+  <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

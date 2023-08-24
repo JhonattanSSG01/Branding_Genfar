@@ -1,18 +1,30 @@
 // Costante para el boton de abrir el modal
-const open = document.getElementById('icon');
+const openProduct = document.getElementById('iconProduct');
+const openVideo = document.getElementById('iconVideo');
 // Costante para referirnos al modal
-const modal = document.getElementById('modal');
+const modalProduct = document.getElementById('modalProduct');
+const modalVideo = document.getElementById('modalVideo');
 // Costante para el boton de cerrar el modal
-const close = document.getElementById('closeModal');
+const closeProduct = document.getElementById('closeModalProduct');
+const closeVideo = document.getElementById('closeModalVideo');
 
 // Evento para abrir el modal cuando se le de clic al item y este crea en el elemento una nueva clase la cual muestra el modal realizado en HTML y CSS
-open.addEventListener('click', (event) => {
+openProduct.addEventListener('click', (event) => {
   event.preventDefault();
-  modal.classList.add('showModal');
+  modalProduct.classList.add('showModal');
+});
+
+openVideo.addEventListener('click', (event) => {
+  event.preventDefault();
+  modalVideo.classList.add('showModal');
 });
 
 // Evento para cerrar el modal cuando se le de clic al item y este elimina del elemento modal la clase
-close.addEventListener('click', (event) => {
+closeProduct.addEventListener('click', (event) => {
   event.preventDefault();
-  modal.classList.remove('showModal');
+  modalProduct.classList.remove('showModal');
+});
+closeVideo.addEventListener('click', (event) => {
+  event.preventDefault();
+  modalVideo.classList.remove('showModal');
 });

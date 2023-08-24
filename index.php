@@ -46,17 +46,17 @@
               <label for="correo"></label>
               <input type="email" placeholder="Ingrese correo" name="correo" required id="correo" />
             </fieldset>
-            <!-- <fieldset class="checkList">
+            <fieldset class="checkList">
               <span>Desea recibir información</span>
               <label for="si">
                 Si
-                <input type="checkbox" id="si" name="si" />
+                <input type="radio" id="si" name="select" />
               </label>
               <label for="no">
                 No
-                <input type="checkbox" id="no" name="no" />
+                <input type="radio" id="no" name="select" />
               </label>
-            </fieldset> -->
+            </fieldset>
             <button class="btn" type="submit" name="enviar">Enviar</button>
           </form>
         </section>

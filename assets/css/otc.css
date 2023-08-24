@@ -261,7 +261,6 @@ footer .logOtc{
   opacity: 0;
   pointer-events: none;
   transition: opacity .6s;
-
 }
 
 .showModal{
@@ -270,7 +269,7 @@ footer .logOtc{
   transition: opacity .6s;
 }
 
-.modal .containerModal{
+.modal .containerModalProduct{
   width: 50%;
   max-width: 400px;
   max-height: 90%;
@@ -283,22 +282,88 @@ footer .logOtc{
   position: relative;
 }
 
-.containerModal .titleModal{
+.modal .containerModalVideo{
+  width: 90%;
+  height: 65%;
+  max-width: 1000px;
+  max-height: 90%;
+  margin: auto;
+  position: relative;
+  background-color: var(--colorWhite);
+}
+
+.containerModalVideo .video{
+  width: 100%;
+  height: 25rem;
+  background-color: var(--colorGrayVideo);
+  display: grid;
+  place-items: center;
+}
+
+.containerModalVideo .video > .circlePlay{
+  width: 7rem;
+  height: 7rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--colorVideoPlay);
+  border-radius: 50%;
+}
+
+.containerModalVideo .video > .circlePlay > .play{
+  font-size: 4rem;
+  color: var(--colorWhite);
+}
+
+.containerModalVideo .titleModal{
+  font-size: 1.4rem;
+  font-family: 'Gotham-light';
+  padding: 1rem;
+}
+
+.containerModalVideo .controls {
+  padding: .5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerModalVideo .controls .line {
+  width: 50%;
+  height: .2rem;
+  background-color: var(--colorBlack);
+  position: relative;
+}
+
+.containerModalVideo .controls .line::before {
+  content: "" ;
+  width: 40%;
+  height: .2rem;
+  background-color: var(--colorRed);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.containerModalVideo .controls i{
+  font-size: 1.5rem;
+}
+
+.containerModalProduct .titleModal{
   font-size: 2rem;
   font-family: 'Gotham-light';
 }
 
-.containerModal .titleModal > span{
+.titleModal > span{
   color: var(--colorRed);
   text-transform: uppercase;
   font-family: 'Gotham-bold';
 }
 
-.containerModal img{
+.containerModalProduct img{
   width: 90%;
 }
 
-.containerModal .closeModal{
+.closeModal{
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
@@ -306,7 +371,7 @@ footer .logOtc{
   border-radius: 50%;
 }
 
-.containerModal .closeModal > i{
+ .closeModal > i{
   color: var(--colorWhite);
   font-size: 3rem;
   border: 3px solid var(--colorBlack);
