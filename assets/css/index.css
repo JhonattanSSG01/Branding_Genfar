@@ -145,13 +145,20 @@ form .checkList,
   font-size: 0.9rem;
 }
 
-.checkList input {
+.checkList input[type="radio"] {
   margin-left: 0.3rem;
   appearance: none;
   border-radius: 0;
   width: 1.3rem;
   height: 1.3rem;
   background-color: var(--colorRedCheck);
+}
+
+.checkList input[type="radio"]:checked{
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: .8rem;
+  background-color: var(--colorRed);
 }
 
 form .btn {
