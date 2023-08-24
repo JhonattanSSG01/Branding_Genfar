@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description"
-    content="En Genfar somos un laboratorio especializado en productos para nuestros clientes y su cuidado">
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/variables.css">
-  <link rel="stylesheet" href="./assets/css/reset.css">
+    content="En Genfar somos un laboratorio especializado en productos para nuestros clientes y su cuidado"/>
+  <link rel="stylesheet" href="./assets/css/index.css"/>
+  <link rel="stylesheet" href="./assets/css/variables.css"/>
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
   <title>Branding Genfar - Inicio</title>
 </head>
 
@@ -37,27 +37,27 @@
           Genfar</span>
         </h1>
         <section>
-          <form action="url" method="post">
+          <form method="post">
             <fieldset>
               <label for="nombre"></label>
-              <input type="text" placeholder="Ingrese nombre" autofocus required id="nombre" />
+              <input type="text" placeholder="Ingrese nombre" name="nombre" autofocus required id="nombre" />
             </fieldset>
             <fieldset>
               <label for="correo"></label>
-              <input type="email" placeholder="Ingrese correo" required id="correo" />
+              <input type="email" placeholder="Ingrese correo" name="correo" required id="correo" />
             </fieldset>
-            <fieldset class="checkList">
+            <!-- <fieldset class="checkList">
               <span>Desea recibir información</span>
               <label for="si">
                 Si
-                <input type="checkbox" required id="si" name="Si" />
+                <input type="checkbox" id="si" name="si" />
               </label>
               <label for="no">
                 No
-                <input type="checkbox" required id="no" name="No" />
+                <input type="checkbox" id="no" name="no" />
               </label>
-            </fieldset>
-            <button class="btn" type="submit">Enviar</button>
+            </fieldset> -->
+            <button class="btn" type="submit" name="enviar">Enviar</button>
           </form>
         </section>
       </div>
@@ -77,10 +77,13 @@
         </p>
       </div>
       <div class="logo">
-        <img src="../assets/images/logo.png" alt="Logo Genfar">
+        <img src="./assets/images/logo.png" alt="Logo Genfar">
       </div>
     </footer>
   </div>
+  <?php
+    include("enviar.php");
+  ?>
 </body>
 
 </html>
